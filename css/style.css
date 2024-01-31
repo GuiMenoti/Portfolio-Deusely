@@ -136,6 +136,15 @@ textarea {
   margin: auto;
   width: 92%; }
 
+  .main-containera {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%; }
+
+  iframe {
+    width: 100%;
+  }
+
 .btn {
   background: #fff;
   color: #333;
@@ -165,10 +174,15 @@ textarea {
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
 .sec-pad {
-  padding: 12rem 0; }
+  padding: 3rem 0; }
   @media only screen and (max-width: 56.25em) {
     .sec-pad {
       padding: 8rem 0; } }
+
+      
+  iframe {
+    width: 99%;
+  }
 
 .text-primary {
   color: #fff;
@@ -213,7 +227,7 @@ textarea {
       .home-hero__mouse-scroll-cont {
         display: none; } }
   .home-hero__social {
-    width: 5rem; }
+    width: 8rem; }
   .home-hero__social-icon-link {
     width: 100%;
     display: block;
@@ -265,7 +279,7 @@ textarea {
           font-size: 2.4rem; } }
     .about__content-details-para {
       font-size: 1.8rem;
-      color: grey;
+      color: rgb(39, 38, 38);
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem; }
@@ -280,6 +294,18 @@ textarea {
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 5rem;
   margin-bottom: 11rem; }
+
+  .projects__rowa {
+    display: grid;
+  grid-template-columns: 1fr; /* Definindo uma única coluna */
+  grid-gap: 5rem;
+  margin-bottom: 11rem;
+  
+}
+
+
+
+    
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       grid-template-columns: 1fr;
@@ -517,12 +543,17 @@ textarea {
     .header__logo-container:hover {
       color: #0062b9; }
   .header__logo-img-cont {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #0062b9; }
+    background: #0062b9; 
+    background-size: cover;
+  }
+
+
+
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
@@ -640,8 +671,8 @@ textarea {
   .main-footer__social-cont {
     margin-top: 2rem; }
   .main-footer__icon {
-    margin-right: 1rem;
-    width: 2.5rem; }
+    margin-right: 1.2rem;
+    width: 4.8rem; }
     .main-footer__icon--mr-none {
       margin-right: 0; }
   .main-footer__lower {
@@ -655,6 +686,12 @@ textarea {
       text-decoration: underline;
       font-weight: bold;
       margin-left: 2px; }
+
+      .portfolio-section {
+        padding: 20px;
+        border-bottom: 1px solid rgb(83, 83, 141);
+        padding-bottom: 10px;
+      }
     @media only screen and (max-width: 56.25em) {
       .main-footer__lower {
         padding: 3.5rem 0; } }
@@ -669,8 +706,58 @@ textarea {
     font-size: 1.6rem;
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
-    font-weight: 600;
-    color: #777; }
+    font-weight: 600; 
+    color: #2b2b2b; 
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+
+    .skills__skilla {
+      padding: 0.5rem 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-right: 0.5rem;
+      background: rgba(153, 153, 153, 0.2);
+      border-radius: 5px;
+      font-weight: 600;
+      color: #777; 
+      cursor: pointer;
+      
+     }
+
+     .skills__skill:hover {
+      background-color: rgb(46, 46, 46);
+      color: white;
+     }
+
+      .portfolio-section {
+        margin-bottom: 30px;
+      }
+      
+      .portfolio-section h2 {
+        font-size: 1.8rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .portfolio-section ul {
+        list-style-type: disc;
+        padding: 0;
+      }
+      
+      .portfolio-section li {
+        margin-bottom: 8px;
+        font-size: 1.8rem;
+        color: #2c2c2c;
+        list-style: disc;
+      }
+
+      .projects__row-content-box {
+        background-color: #f0f0f0; /* Cor de fundo do quadrado */
+        border-radius: 10px; /* Bordas arredondadas */
+        padding: 20px; /* Espaçamento interno para o conteúdo */
+        margin-bottom: 20px; /* Margem inferior para separar de outros elementos */
+      }
 
 .mouse {
   width: 25px;
